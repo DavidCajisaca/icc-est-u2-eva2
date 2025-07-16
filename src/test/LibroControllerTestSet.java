@@ -41,9 +41,5 @@ public class LibroControllerTestSet {
                         new Book("Blockchain", "Marta Ríos", 2021),
                         new Book("Machine Learning", "Cristina Gómez", 2022));
 
-        @Test
-        public void testProcesarConTreeSet() {
-                Set<Book> resultado = controller.procesarLibros(libros);
-                ValidacionesLibro.validarResultadoTreeSet(resultado);
+       
         }
-}

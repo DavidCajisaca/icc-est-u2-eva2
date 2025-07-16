@@ -6,10 +6,12 @@ import java.util.Set;
 import models.Book;
 
 public class LibroController {
- public Set<Book> procesarLibros(List<Book> libros){
-    //Debe devolver un set<Books>
-    Set<Book> librosProcesados = new HashSet<>(libros);
-    return librosProcesados;
-
+ public Set<Book>  procesarLibros(List<Book> libros){
+      Set<Book> librosSet = new HashSet<>();
+      for (Book libro : libros) {
+          librosSet.add(libro);
+      }
+      return librosSet;
+      
  }
 }

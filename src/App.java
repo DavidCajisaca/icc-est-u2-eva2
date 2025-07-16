@@ -33,8 +33,8 @@ public class App {
                 new Book("Blockchain", "Marta Ríos", 2021),
                 new Book("Machine Learning", "Cristina Gómez", 2022));
         LibroController libroController = new LibroController();
-        Set<Book> librosProcesados = (Set<Book>) libroController.procesarLibros(libros);
-        System.out.println("Libros procesados:");
+        Set<Book> librosProcesados = libroController.procesarLibros(libros);
+        System.out.println("Libros procesados: " + librosProcesados.size());
         for (Book libro : librosProcesados) {
             System.out.println(libro);
         }
